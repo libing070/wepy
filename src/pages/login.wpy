@@ -1,0 +1,28 @@
+<template>
+    <div>{{name}}登录成功0001</div>
+</template>
+<script>
+    import wepy from '@wepy/core'
+
+    wepy.page({
+        config: {
+            navigationBarTitleText: "login",
+        },
+        data: {
+          name:''
+        },
+        computed: {},
+        methods: {},
+        created() {
+        },
+      onLoad: function (options){
+        console.log(options.name);
+        this.name=options.name;
+      }
+
+    });
+</script>
+
+<style lang="less">
+
+</style>
